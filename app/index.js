@@ -57,6 +57,12 @@ import Agradecimientos from '../screens/Agradecimientos';
 import Sugerencias from '../screens/Sugerencias';
 import Importante from '../screens/Importante';
 import Cafe from '../screens/Cafe';
+import TyC from '../screens/TyC';
+import Libro from '../screens/Libro';
+import Privacidad from '../screens/Privacidad';
+
+
+
 
 // Modal Component for WithCTA
 function WithCTAModal({ visible, onClose }) {
@@ -88,7 +94,7 @@ function WithCTAModal({ visible, onClose }) {
               11. USO DEL CONTENIDO. LOS USUARIOS SON RESPONSABLES DEL USO DEL CONTENIDO DE ESTA APLICACIÓN/WEB. AL USAR ESTA APLICACIÓN/WEB, USTED RECONOCE Y ACEPTA LA EXENCIÓN DE RESPONSABILIDAD DE GARANTÍA ANTERIOR Y QUE UTILIZA ESTA APLICACIÓN Y LA INFORMACIÓN PROPORCIONADA EN O A TRAVÉS DE ESTA APLICACIÓN/WEB BAJO SU PROPIA RESPONSABILIDAD. {'\n\n'}
               12. LIMITACIÓN DE RESPONSABILIDAD. BAJO NINGUNA CIRCUNSTANCIA EL CREADOR DE LA APLICACIÓN/WEB O CUALQUIERA DE LOS PROVEEDORES DE CONTENIDO SERÁN RESPONSABLES (i) POR CUALQUIER MONTO QUE EXCEDA LA CONTRAPRESTACIÓN QUE USTED PAGÓ POR ALGÚN SERVICIO DE LA  APLICACIÓN/WEB, SI LA HUBIERE, O (ii) POR DAÑOS INDIRECTOS, INCIDENTALES O CONSECUENTES (COMO, SIN LIMITACIÓN, PÉRDIDA DE NEGOCIOS, DAÑOS FISICOS, DAÑOS PSICOLOGICOS, DAÑO A LA REPUTACIÓN, PÉRDIDA DE BENEFICIOS O INGRESOS, DAÑO A DISPOSITIVOS TECNOLÓGICOS O DE OTRO TIPO, O LITIGIO U OTRO) O POR DAÑOS ESPECIALES, EJEMPLARES, PUNITIVOS O SIMILARES, INCLUSO SI SE ADVIERTE O SE ADVIERTE DE LA POSIBILIDAD O PROBABILIDAD DE DICHOS DAÑOS. LA NEGACIÓN DE DAÑOS ESTABLECIDA ANTERIORMENTE ES UN ELEMENTO FUNDAMENTAL DE LA BASE DEL ACUERDO ENTRE NOSOTROS Y USTED. USTED Y NOSOTROS (EN NOMBRE PROPIO Y EN NOMBRE DE LOS PROVEEDORES DE CONTENIDO) ACEPTAMOS QUE LA ANTERIOR LIMITACIÓN DE RESPONSABILIDAD ES UNA DISTRIBUCIÓN DE RIESGO RAZONABLE Y ACORDADA ENTRE USTED Y NOSOTROS (Y LOS PROVEEDORES DE CONTENIDO) Y QUE REFLEJA LAS TARIFAS, SI LAS HUBIERE, QUE SE PUEDE COBRAR POR SERVICIOS SOLICITADOS DENTRO DE LA APLICACIÓN/WEB Y EL CONTENIDO PROPORCIONADO EN O A TRAVÉS DE ESTA APLICACIÓN/WEB. USTED RECONOCE QUE, SIN SU ACUERDO CON ESTA LIMITACIÓN DE RESPONSABILIDAD, NO LE PROPORCIONAREMOS ESTA APLICACIÓN/WEB O CONTENIDO. {'\n\n'}
               13. USO ILEGAL O PROHIBIDO. Como condición para el uso de esta Aplicación/web, usted acepta no utilizar esta Aplicación/web para ningún otro propósito que no sea el permitido por este Acuerdo o para ningún propósito que sea ilegal o esté prohibido por este Acuerdo. No puede utilizar esta Aplicación/web de ninguna manera que pueda dañar, deshabilitar o perjudicar esta Aplicación/web, su disponibilidad y/o funcionalidad, o el uso o disfrute de esta Aplicación/web por parte de otros. No puede intentar obtener acceso no autorizado o cualquier acceso más allá de sus derechos otorgados en este documento a cualquier componente de esta Aplicación/web o cualquier contenido disponible en o a través de esta Aplicación/web mediante piratería, o cualquier otro medio. No puede obtener ni intentar obtener ningún contenido o información a través de ningún medio que no esté explícita e intencionalmente disponible a través de esta Aplicación/web. {'\n\n'}
-              14. PROCESAMIENTO Y ALMACENAMIENTO DE DATOS Los usuarios que soliciten un servicio a través del correo proporcionado, a pesar de contar con videos que explican cómo obtener la información por su cuenta, aceptan que los datos compartidos serán tratados de forma confidencial. Estos datos serán almacenados únicamente durante un período de 6 meses, tras el cual serán eliminados de manera definitiva. La confidencialidad y seguridad de la información están garantizadas en todo momento durante este plazo. Aquellos que soliciten ser voluntarios o soliciten TELEMENTORIA, sus datos estaran guardados bajo confidencialidad, haciendo las comunicaciones respectivas mediante respectivo correo. {'\n\n'}
+              14. PROCESAMIENTO Y ALMACENAMIENTO DE DATOS Los usuarios que soliciten un servicio con algunos "Plus" a través del correo proporcionado, a pesar de contar con videos que explican cómo obtener la información básica por su cuenta, aceptan que los datos compartidos serán tratados de forma confidencial. Estos datos serán almacenados únicamente durante un período de 6 meses, tras el cual serán eliminados de manera definitiva, excepto la constancia o codigo de operación de algún pago realizado. Correos y nombres de aquellos que pudieran haber solicitado algun servicio si seran eliminados. La confidencialidad y seguridad de la información están garantizadas en todo momento durante este plazo. Aquellos que soliciten ser voluntarios o soliciten TELEMENTORIA, sus datos estaran guardados bajo confidencialidad, haciendo las comunicaciones respectivas mediante respectivo correo. {'\n\n'}
               15. INGENIERÍA INVERSA. Bajo ninguna circunstancia puede desarmar, descompilar o realizar ingeniería inversa o intentar descubrir el código fuente de esta Aplicación/web, ya que dicho código fuente es confidencial y propiedad exclusiva del desarrollador de la app. {'\n\n'}
               16. RENUNCIA. Nuestra falta de cumplimiento de alguna disposición de este Acuerdo no se interpretará como una renuncia o limitación de nuestros derechos posteriores a hacer cumplir y obligar al estricto cumplimiento de cada disposición de este Acuerdo. {'\n\n'}
               17. ACUERDO COMPLETO. Este Acuerdo contiene el Acuerdo y entendimiento completo entre usted y nosotros con respecto al tema del mismo, y no existen representaciones, incentivos, promesas o acuerdos, orales o de otro tipo, que no estén incorporados en el presente. Todas las discusiones, negociaciones, compromisos y entendimientos previos relacionados con el presente se fusionan en el presente
@@ -576,6 +582,7 @@ function TabNavigator() {
           tabBarLabelStyle: { fontWeight: 'bold' }, // Negrita cuando está seleccionado
         }}
       />
+      
     </Tab.Navigator>
 
   
@@ -639,7 +646,7 @@ function DrawerNavigator() {
                     ),
                 }}
             />
-      <Drawer.Screen
+            <Drawer.Screen
                 name="Importante"
                 component={Importante}
                 options={{
@@ -649,6 +656,37 @@ function DrawerNavigator() {
                     ),
                 }}
             />
+            <Drawer.Screen
+                name="Terminos y Condiciones"
+                component={TyC}
+                options={{
+                    drawerLabel: 'Terminos y Condiciones',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="note-text-outline" color={color} size={26} />
+                    ),
+                }}
+            />
+            <Drawer.Screen
+                name="Libro de reclamaciones"
+                component={Libro}
+                options={{
+                    drawerLabel: 'Libro de reclamaciones',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="book-open-variant" color={color} size={26} />
+                    ),
+                }}
+            />
+            <Drawer.Screen
+                name="Politicas de Privacidad"
+                component={Privacidad}
+                options={{
+                    drawerLabel: 'Politicas de Privacidad',
+                    drawerIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="file-lock-outline" color={color} size={26} />
+                    ),
+                }}
+            />
+            
             <Drawer.Screen
                 name="Sobre"
                 component={Sobre}
