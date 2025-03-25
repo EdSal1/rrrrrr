@@ -43,7 +43,7 @@ const Cafe = () => {
     <ScrollView contentContainerStyle={styles.scrollContainer}>
     <View style={styles.container}>
       <Text>
-        Esta es una aplicación/web gratuita para su uso y descarga, SI en algún momento te ayudó o guió de forma excepcional, no dudes en apoyar con una pequeña donación que ayudará también para mantenimiento y actualizaciones futuras. Puedes invitarme un café de 1 lukita o lo que dicte tu corazon y bolsillo mediante Yape o Plin. Se te muestran ambos QRs para que tomes captura de pantalla y puedas subir la foto del QR en dichas Aplicaciones por si te animas a invitarme un Café :D [E. Salvador]
+        Esta es una aplicación/web gratuita para su uso y descarga, solo existen algunos servicios que son de paga y opcionales. SI en algún momento te ayudó o guió de forma excepcional, no dudes en apoyar con una pequeña donación que ayudará también para mantenimiento y actualizaciones futuras. Puedes invitarme un café de 1 lukita o lo que dicte tu corazon y bolsillo mediante Yape o Plin. Se te muestran ambos QRs para que tomes captura de pantalla y puedas subir la foto del QR en dichas Aplicaciones por si te animas a invitarme un Café :D [E. Salvador]
         
       </Text>
       

@@ -3,10 +3,11 @@ import { StyleSheet, Text, ScrollView, Linking, TouchableOpacity, View } from 'r
 import { Ionicons } from '@expo/vector-icons'; // Cambiado a Ionicons
 
 const enlaces = [
-  { id: 1, text: 'DIRESA ALTO AMAZONAS', url: 'https://diredsaa.gob.pe/manuales-his/', info: 'La DIRESA ALTO AMAZONAS es tal vez donde puedes encontrar de forma organizada la última versión de estos.' },
-  { id: 2, text: 'DIRESA MOQUEGUA', url: 'https://drive.google.com/drive/folders/1fQ5jhbmqOrur5QXMed35pEZJQo0qoQMJ', info: 'La DIRESA Moquegua también tiene un enlace a manuales actualizados sobre cómo deben ser llenados los HIS.' },
-  { id: 3, text: 'DIRESA LORETO', url: 'https://dite.geresaloreto.gob.pe/w_manuales.php', info: 'La DIRESA LORETO también tiene un enlace a manuales actualizados en su sitio web.' },
-  { id: 4, text: 'HiS Dr Ricardo Carrillo', url: 'https://docs.google.com/file/d/1IgWbP2u2C4t5dX_r-MmGABAIbfE0pwC2/edit?usp=docslist_api&filetype=msexcel', info: 'El Dr. Ricardo Carrillo personalizó un Excel con los HIS que se llenan de forma común. Puedes acceder a través del siguiente enlace, además tienes el video demostrativo que puedes acceder por el botón de TikTok.' },
+  { id: 1, text: 'ENLACE REUNIS', url: 'https://bvs.minsa.gob.pe/manuales-del-sistema-de-informacion-his/', info: 'REUNIS en su seccion de Manuales de Registro y codificacion te re-dirige a la seccion de Manuales HIS por año, la cual se encuentra actualizada' },
+  { id: 2, text: 'DIRESA ALTO AMAZONAS', url: 'https://diredsaa.gob.pe/manuales-his/', info: 'La DIRESA ALTO AMAZONAS es tal vez donde puedes encontrar de forma organizada la última versión de estos.' },
+  { id: 3, text: 'DIRESA MOQUEGUA', url: 'https://drive.google.com/drive/folders/1fQ5jhbmqOrur5QXMed35pEZJQo0qoQMJ', info: 'La DIRESA Moquegua también tiene un enlace a manuales actualizados sobre cómo deben ser llenados los HIS.' },
+  { id: 4, text: 'DIRESA LORETO', url: 'https://dite.geresaloreto.gob.pe/w_manuales.php', info: 'La DIRESA LORETO también tiene un enlace a manuales actualizados en su sitio web.' },
+  { id: 5, text: 'HiS Dr Ricardo Carrillo', url: 'https://docs.google.com/file/d/1IgWbP2u2C4t5dX_r-MmGABAIbfE0pwC2/edit?usp=docslist_api&filetype=msexcel', info: 'El Dr. Ricardo Carrillo personalizó un Excel con los HIS que se llenan de forma común. Puedes acceder a través del siguiente enlace, además tienes el video demostrativo que puedes acceder por el botón de TikTok.' },
 ];
 
 const His = () => {
@@ -31,7 +32,7 @@ const His = () => {
           <TouchableOpacity onPress={() => handlePress(enlace.url)}>
             <Text style={styles.urlText}>{enlace.url}</Text>
           </TouchableOpacity>
-          {enlace.id === 4 && (
+          {enlace.id === 5 && (
             <TouchableOpacity onPress={openTikTok} style={styles.tiktokButton}>
               <Ionicons name="logo-tiktok" size={32} color="black" />
               <Text style={styles.tiktokText}>TikTok</Text>

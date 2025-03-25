@@ -15,11 +15,8 @@ const HomeScreen = ({ navigation }) => {
 
 
       <Text numberOfLines={30}>
-      Una herramiento digital dirigida a profesionales que realizarán o se encuentran realizando el SERUMS, 
-        también para aquellos profesionales que ya se encuentran laborando en el primer nivel de atención. 
-        Esta herramienta ha sido diseñada para facilitar diversas actividades durante tu servicio rural y marginal, así como primer nivel de atención. Proporcionando informacion y enlaces de sitios web donde podrias encontrar la informacion que necesites, acceso a recursos y herramientas que optimicen tu desempeño . 
-        Aunque la información presentada está disponible en Google, aquí se encuentra organizada, adaptada y sistematizada 
-        para que puedas integrarla y utilizarla de manera más efectiva.
+        Una herramienta digital diseñada para profesionales que están por iniciar o ya están realizando el SERUMS, así como para aquellos que laboran en el primer nivel de atención. Esta plataforma facilita diversas actividades durante el servicio rural y en el primer nivel de atención, brindando acceso a información clave, enlaces a sitios web relevantes y recursos que optimizan el desempeño profesional.
+        Aunque la información presentada está disponible desde cualquier navegador (Ejm: Google), aquí se encuentra organizada, adaptada y sistematizada para que puedas integrarla y utilizarla de manera más efectiva. DEBES COMPARAR LA INFORMACION PRESENTADA Y ACTUALIZARLA SEGUN LOS COMUNICADOS OTORGADOS POR TU RED
       </Text>
 
 

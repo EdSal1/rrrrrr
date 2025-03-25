@@ -75,7 +75,7 @@ export default function Sobre() {
 
        {'\n\n'}
 
-        Cada año, lamentablemente, vemos cómo colegas enfrentan accidentes durante el cumplimiento de su noble labor. No permitamos que esto se convierta en una estadística más. Tú eres indispensable para tu familia.
+        Cada año, lamentablemente, vemos cómo colegas enfrentan accidentes/incidentes durante el cumplimiento de su noble labor. No permitamos que esto se convierta en una estadística más. Tú eres indispensable para tu familia.
         {'\n\n'}
         Algunas recomendaciones clave para tu seguridad:
         {'\n\n'}

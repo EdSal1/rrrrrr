@@ -32,7 +32,7 @@ const PreSerums = ({ navigation }) => {
             <TouchableOpacity style={styles.optionButton} onPress={() => navigation.navigate('EnlacesScreen')}>
               <Text style={styles.optionText}>Grupos de Facebook</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.optionButton} onPress={() => openLink('https://www.youtube.com/watch?v=WT0e8h1c9i4&feature=youtu.be')}>
+            <TouchableOpacity style={styles.optionButton} onPress={() => openLink('https://www.youtube.com/watch?v=6EaznorSMp4')}>
               <Text style={styles.optionText}>Video demostrativo</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.optionButton} onPress={() => openLink('https://www.youtube.com/watch?v=e2Gm97P8peI')}>
