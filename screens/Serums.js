@@ -19,7 +19,7 @@ const Serums = ({ navigation }) => {
     { id: 6, text: 'HIS', screen: 'His' },
     { id: 7, text: 'FUAS', screen: 'Fuas' },
     { id: 8, text: 'Anemia', screen: 'Anemia' },
-    { id: 9, text: 'RP', url: 'https://drive.google.com/file/d/1RNJVNljov3qEo4cPF_4u2kD3lioQmhbi/view?usp=sharing' },
+    { id: 9, text: 'RP', url: 'https://drive.google.com/file/d/1ImFqdHWC59DUMR9dsGBrnFBc_9YkDbh1/view?usp=sharing' },
     { id: 10, text: 'Cursos en SERUMS', screen: 'CursosSerums' },
     { id: 11, text: 'Preparacion para el Residentado Medico', screen: 'Residentado' },
     { id: 12, text: 'Investigando en el SERUMS', screen: 'Investigando' },
